@@ -1,0 +1,58 @@
+{
+  "cars": [
+    {
+      "id": 1,
+      "brand": "BMW",
+      "name": "M4",
+      "body": "Coupe",
+      "year": "2016",
+      "engine": "3.0 Benzyna",
+      "image": "cars/bmwM4.png"
+    },
+    {
+      "id": 2,
+      "brand": "Ford",
+      "name": "Mustang",
+      "body": "Coupe",
+      "year": "2020",
+      "engine": "5.0 Benzyna",
+      "image": "cars/mustang.png"
+    },
+    {
+      "id": 3,
+      "brand": "Ford",
+      "name": "Camaro",
+      "body": "Coupe",
+      "year": "2017",
+      "engine": "6.2 Benzyna",
+      "image": "cars/camaro.png"
+    },
+    {
+      "id": 4,
+      "brand": "Audi",
+      "name": "RS6",
+      "body": "Kombii",
+      "year": "2020",
+      "engine": "4.0 Benzyna",
+      "image": "cars/audirs6.png"
+    },
+    {
+      "id": 5,
+      "brand": "Mercedes",
+      "name": "AMG GT 63",
+      "body": "Coupe",
+      "year": "2018",
+      "engine": "3.9 Benzyna",
+      "image": "cars/mercedesamgGT.png"
+    },
+    {
+      "id": 5,
+      "brand": "Volkswagen",
+      "name": "Golf 7 GTI",
+      "body": "Hatchback",
+      "year": "2019",
+      "engine": "2.0 Benzyna",
+      "image": "cars/golfgti.png"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+// .contact__wrapper {
+//   width: 100%;
+//   height: 100vh;
+// }
+
+// .contact__IMG {
+//   background: url(../../../assets/contact.jpeg);
+//   background-size: cover;
+//   background-position: top;
+//   background-repeat: no-repeat;
+
+//   width: 100%;
+//   height: 100vh;
+
+//   @media (min-width: 768px) {
+//     height: 70vh;
+//   }
+// }
+
+.contact__image {
+  width: 100%;
+}
+
+.contact__IMG {
+  background: url(../../../assets/contact.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  width: 100%;
+  height: 65vh;
+
+  @media (min-width: 768px) {
+    background-position: top;
+    height: 70vh;
+  }
+}

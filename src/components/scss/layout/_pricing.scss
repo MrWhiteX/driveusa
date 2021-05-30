@@ -1,0 +1,55 @@
+.pricing {
+  width: 100%;
+  //   display: flex;
+  //   flex-direction: column;
+
+  text-align: center;
+  color: #fff;
+
+  background: #222431 0% 0% no-repeat padding-box;
+
+  &__title {
+    margin: 51px 0 24px 0;
+    font-size: 1.3rem;
+    font-weight: bold;
+
+    @media (min-width: 768px) {
+      margin: 88px 0 64px 0;
+      font-size: 1.6rem;
+    }
+  }
+
+  &__description {
+    line-height: 1.8rem;
+
+    @media (min-width: 768px) {
+      margin-bottom: 64px;
+      line-height: 1.8rem;
+      font-size: 1.4rem;
+    }
+  }
+
+  &__button {
+    text-decoration: none;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    padding: 10px 40px;
+    border: 3px solid #0d0d0d;
+    border-radius: 27px;
+
+    font-size: 1.3rem;
+    font-weight: bold;
+
+    @media (min-width: 768px) {
+      font-size: 1.6rem;
+      padding: 20px 60px;
+    }
+  }
+}
+
+.button__container {
+  margin: 40px 0 82px 0;
+
+  @media (min-width: 768px) {
+    margin: 80px 0 90px 0;
+  }
+}

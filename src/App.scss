@@ -1,0 +1,22 @@
+@import "components/scss/reset";
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300&family=Poppins:wght@300&display=swap");
+
+@import "components/scss/layout/jumbo";
+@import "components/scss/layout/navbar";
+@import "components/scss/layout/aboutUs";
+@import "components/scss/layout/carousel";
+@import "components/scss/layout/purchaseRules";
+@import "components/scss/layout/transactionImg";
+@import "components/scss/layout/pricing";
+@import "components/scss/layout/camaro";
+@import "components/scss/layout/ourCars";
+@import "components/scss/layout/contactIMG";
+@import "components/scss/layout/contact";
+@import "components/scss/layout/footer";
+@import "components/scss/layout/calc";
+@import "components/scss/layout/admin";
+
+html {
+  font-family: "Oxygen", sans-serif;
+  font-family: "Poppins", sans-serif;
+}

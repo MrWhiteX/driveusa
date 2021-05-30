@@ -1,0 +1,125 @@
+.purchaseRules {
+  height: auto;
+  background: transparent linear-gradient(360deg, #1e202d 0%, #686a72 100%) 0%
+    0% no-repeat padding-box;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 40px;
+
+    color: #fff;
+
+    @media (min-width: 768px) {
+      margin-top: 88px;
+    }
+
+    &--title {
+      font-size: 1.3rem;
+      font-weight: bold;
+      margin-bottom: 24px;
+
+      @media (min-width: 768px) {
+        font-size: 1.6rem;
+        margin-bottom: 64px;
+      }
+    }
+
+    &--description {
+      margin-bottom: 48px;
+      text-align: center;
+      font-size: 1.2rem;
+      line-height: 1.8rem;
+
+      @media (min-width: 768px) {
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+        margin-bottom: 48px;
+      }
+    }
+  }
+}
+
+// CAROUSEL MOBILE
+
+.purchaseRulesCarousel {
+  @media (min-width: 768px) {
+    display: none;
+  }
+  &__number {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+
+    &--title {
+      font-size: 1.3rem;
+      font-weight: bold;
+      margin-bottom: 48px;
+    }
+    &--description {
+      text-align: center;
+      font-size: 1.2rem;
+      line-height: 1.8rem;
+    }
+  }
+}
+
+.numberCircle {
+  border-radius: 50%;
+  width: 53px;
+  height: 53px;
+  padding: 8px;
+
+  background: transparent;
+  border: 3px solid #fff;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  font-size: 33px;
+  margin-bottom: 24px;
+}
+
+// TIMELINE DESKTOP
+
+.timeline {
+  display: none;
+
+  &__element {
+    @media (min-width: 768px) {
+      font-size: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    @media (min-width: 992px) {
+      font-size: 43px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    @media (min-width: 1180px) {
+      font-size: 46px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      position: relative;
+      top: 7px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    display: flex;
+  }
+}

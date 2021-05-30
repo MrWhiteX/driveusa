@@ -1,0 +1,57 @@
+.footer {
+  background: #000000e6 0% 0% no-repeat padding-box;
+
+  &__wrapper {
+    color: #fff;
+    padding-top: 88px;
+
+    @media (min-width: 768px) {
+      display: flex;
+      padding-top: 50px;
+    }
+  }
+
+  &__menu {
+    display: none;
+
+    @media (min-width: 768px) {
+      display: flex;
+    }
+  }
+}
+
+.contact__details {
+  font-weight: bold;
+  padding-top: 48px;
+  @media (min-width: 768px) {
+    padding-left: 70px;
+  }
+}
+
+.phone__talk,
+.email,
+.address {
+  padding-top: 48px;
+}
+
+.singleElementContact {
+  display: flex;
+  align-items: center;
+
+  span {
+    margin-left: 19px;
+  }
+}
+
+.copyright {
+  color: #fff;
+  padding-top: 64px;
+  padding-bottom: 39px;
+  text-align: center;
+}
+
+.social__ico {
+  a {
+    padding-left: 20px;
+  }
+}

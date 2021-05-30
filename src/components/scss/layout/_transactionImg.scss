@@ -1,0 +1,27 @@
+.transaction {
+  background: #222431;
+}
+
+.img__desktop {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: block;
+    background: url(../../../assets/transactionDesktop.jpeg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 65vh;
+  }
+}
+
+.img__mobile {
+  @media (min-width: 768px) {
+    display: none;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
