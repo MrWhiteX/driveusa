@@ -1,6 +1,5 @@
 {
   "name": "driveusa",
-  "homepage": "https://mrwhitex.github.io",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -33,6 +32,10 @@
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrWhiteX/mrwhitex.github.io.git"
   },
   "eslintConfig": {
     "extends": [
