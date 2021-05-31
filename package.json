@@ -1,6 +1,5 @@
 {
   "name": "driveusa",
-  "homepage": "https://mrwhitex.github.io/driveusa/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
