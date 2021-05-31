@@ -60,6 +60,17 @@ const Admin = () => {
 
                 <form>
                   <label>
+                    ID
+                    <input
+                      style={{ marginTop: 10 }}
+                      placeholder="Wpisz ID"
+                      type="number"
+                      name="id"
+                      value={newCar.id}
+                      onChange={handleChange}
+                    />
+                  </label>
+                  <label>
                     Marka Samochodu
                     <input
                       style={{ marginTop: 10 }}
@@ -111,6 +122,18 @@ const Admin = () => {
                       type="text"
                       name="engine"
                       value={newCar.engine}
+                      onChange={handleChange}
+                    />{" "}
+                  </label>
+
+                  <label>
+                    Zdjęcie
+                    <input
+                      style={{ marginTop: 10 }}
+                      placeholder="Podaj adres do zdjęcia"
+                      type="text"
+                      name="image"
+                      value={newCar.image}
                       onChange={handleChange}
                     />{" "}
                   </label>
