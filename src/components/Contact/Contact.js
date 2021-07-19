@@ -1,8 +1,12 @@
 import React from "react";
+import ScrollToTop from "react-scroll-to-top";
 
 const Contact = () => {
+  const handleContactSubmit = (e) => {
+    e.preventDefault();
+  };
   return (
-    <section className="contact">
+    <section id="contact" className="contact">
       <div className="container">
         <div className="row">
           <div className="col">
@@ -41,7 +45,7 @@ const Contact = () => {
                     <textarea name="" id="" cols="30" rows="10"></textarea>
                   </label>
                   <div className="form__button">
-                    <button>Wyślij</button>
+                    <button onClick={handleContactSubmit}>Wyślij</button>
                   </div>
                 </form>
               </div>
@@ -49,6 +53,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
+      <ScrollToTop smooth color="#00b0aa" />
     </section>
   );
 };

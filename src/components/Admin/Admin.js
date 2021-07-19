@@ -14,7 +14,8 @@ const Admin = () => {
 
   useEffect(() => {
     fetchCars().then((data) => {
-      setActualCars(data);
+      setActualCars(Object.values(data));
+      console.log(data);
     });
   }, []);
 
@@ -59,17 +60,6 @@ const Admin = () => {
                 {error && <Alert severity="error">{error}</Alert>}
 
                 <form>
-                  <label>
-                    ID
-                    <input
-                      style={{ marginTop: 10 }}
-                      placeholder="Wpisz ID"
-                      type="number"
-                      name="id"
-                      value={newCar.id}
-                      onChange={handleChange}
-                    />
-                  </label>
                   <label>
                     Marka Samochodu
                     <input
@@ -157,12 +147,12 @@ const Admin = () => {
                 <p>Uwaga! Minimum oraz maximum 6 pojazdów</p>
                 <table className="cars__table">
                   <tbody>
-                    {actualCars.map((singleCar) => {
+                    {actualCars.map((singleCar, index) => {
                       return (
-                        <tr key={singleCar.id}>
+                        <tr key={index}>
                           <DeleteForeverIcon
                             style={{ cursor: "pointer" }}
-                            onClick={() => setCarToDelete(singleCar.id)}
+                            onClick={() => setCarToDelete(index)}
                           />
                           <td>{singleCar.brand}</td>
                           <td>{singleCar.name}</td>

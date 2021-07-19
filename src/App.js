@@ -1,7 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import { HashLink as Link } from "react-router-hash-link";
+import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 import NavBar from "./components/NavBar/NavBar";
+import SubPagesNavBar from "./components/NavBar/SubPagesNavBar";
 import Jumbo from "./components/Jumbo/Jumbo";
 import AboutUs from "./components/AboutUs/AboutUs";
 import PurchaseRules from "./components/PurchaseRules/PurchaseRules";
@@ -18,27 +19,29 @@ import Admin from "./components/Admin/Admin";
 const App = () => {
   return (
     <Router>
-      <Route exact={true} path="/">
-        <NavBar />
-        <Jumbo />
-        <AboutUs />
-        <PurchaseRules />
-        <TransactionIMG />
-        <Pricing />
-        <CamaroIMG />
-        <OurCars />
-        <ContactIMG />
-        <Contact />
-        <Footer />
-      </Route>
-      <Route path="/calc">
-        <NavBar />
-        <Calculator />
-        <Footer />
-      </Route>
-      <Route path="/admin">
-        <Admin />
-      </Route>
+      <ScrollToTop>
+        <Route exact={true} path="/">
+          <NavBar />
+          <Jumbo />
+          <AboutUs />
+          <PurchaseRules />
+          <TransactionIMG />
+          <Pricing />
+          <CamaroIMG />
+          <OurCars />
+          <ContactIMG />
+          <Contact />
+          <Footer />
+        </Route>
+        <Route path="/calc">
+          <SubPagesNavBar />
+          <Calculator />
+          <Footer />
+        </Route>
+        <Route path="/admin">
+          <Admin />
+        </Route>
+      </ScrollToTop>
     </Router>
   );
 };

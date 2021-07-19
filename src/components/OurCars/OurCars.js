@@ -9,14 +9,27 @@ const OurCars = () => {
   useEffect(() => {
     fetchCars()
       .then((data) => {
-        setCar(data);
+        setCar(Object.values(data));
         setLoading(false);
       })
 
       .catch((err) => {
+        setLoading(false);
         console.log("Błąd!", err);
       });
   }, []);
+
+  // useEffect(() => {
+  //   fetchCars()
+  //     .then((data) => {
+  //       setCar(data);
+  //       setLoading(false);
+  //     })
+
+  //     .catch((err) => {
+  //       console.log("Błąd!", err);
+  //     });
+  // }, []);
 
   return (
     <section id="gallery" className="ourCars">
@@ -27,9 +40,9 @@ const OurCars = () => {
               <h2 className="ourCars__title">NASZE SAMOCHODY</h2>
               <div className="cars__wrapper">
                 <div className="row">
-                  {car.map((singleCar) => {
+                  {car.map((singleCar, index) => {
                     return (
-                      <div key={singleCar.id} className="col-sm-12 col-md-6">
+                      <div key={index} className="col-sm-12 col-md-6">
                         {loading ? (
                           <LoadingIcon />
                         ) : (

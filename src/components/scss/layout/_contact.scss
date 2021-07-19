@@ -77,10 +77,13 @@
     }
 
     button {
+      background: #fff;
+      color: black;
       text-transform: uppercase;
       padding: 12px 35px;
       font-size: 1.2rem;
       border-radius: 50px;
+      cursor: pointer;
 
       @media (min-width: 768px) {
         padding: 20px;

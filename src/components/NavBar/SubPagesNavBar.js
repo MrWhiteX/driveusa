@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import { Link } from "react-scroll";
+import { HashLink } from "react-router-hash-link";
 import Hamburger from "hamburger-react";
-import Menu from "../Menu/Menu";
+import SubPagesMenu from "../Menu/SubPagesMenu";
 import MobileMenu from "../Menu/MobileMenu";
 
-const NavBar = () => {
+const SubPagesNavBar = () => {
   const [isOpen, setOpen] = useState(false);
   return (
     <>
@@ -16,25 +16,19 @@ const NavBar = () => {
                 <div className="hamburger__menu">
                   <Hamburger toggled={isOpen} toggle={setOpen} />
                 </div>
-                <Link
-                  activeClass="active"
-                  to="mainPage"
-                  spy={true}
-                  smooth={true}
-                  offset={-70}
-                  duration={500}
-                >
+                <HashLink to="/#mainPage">
+                  {" "}
                   <h2>DRIVEUSA.PL</h2>
-                </Link>
+                </HashLink>
 
-                {isOpen === true ? (
+                {isOpen === false ? null : (
                   <div className="nav__mobile">
                     <MobileMenu />
                   </div>
-                ) : null}
+                )}
 
                 <div className="nav">
-                  <Menu />
+                  <SubPagesMenu />
                 </div>
               </div>
             </div>
@@ -45,4 +39,4 @@ const NavBar = () => {
   );
 };
 
-export default NavBar;
+export default SubPagesNavBar;

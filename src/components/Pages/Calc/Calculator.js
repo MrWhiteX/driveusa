@@ -64,7 +64,7 @@ const Calculator = () => {
   }, []);
 
   useEffect(() => {
-    if (form.personality == "company") {
+    if (form.personality === "company") {
       setCustomsClearence(customDuty + 300);
     } else {
       setCustomsClearence(customClearence);
